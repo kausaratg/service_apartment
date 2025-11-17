@@ -91,29 +91,60 @@
     </section>
     <section class="location_section">
         <h1>Popular Locations</h1>
-        <div class="locations">
-            <div class="location">
-                 <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" />
-                 <h3>London</h3>
-            </div>
-             <div class="location">
-                 <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" />
-                 <h3>Paris</h3>
-            </div> 
-            <div class="location">
-               <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" />
-                 <h3>New Delhi</h3>
-            </div> 
-            <div class="location">
-                  <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40" />
-                 <h3>Tokyo</h3>
-            </div>
-           
-           
+        <div class="slider" id="slides">
+             <a class="arrow left" id="arrow1" href="#slide1">&#10094;</a>
+                <a class="arrow right" id="arrow2" href="#slide2">&#10095;</a>
+            <div class="locations" id="locat">
+               
+                <div class="location" >
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" />
+                    <h3>London</h3>
+                </div>
+                <div class="location">
+                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" />
+                    <h3>Paris</h3>
+                </div> 
+                <div class="location">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" />
+                    <h3>New Delhi</h3>
+                </div> 
+                <div class="location">
+                    <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40" />
+                    <h3>Tokyo</h3>
+                </div>
             
+                <div class="location">
+                    <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40" />
+                    <h3>Tokyo</h3>
+                </div>
+                
            
         </div>
+        </div>
+    </section>
+    <section class="search-container">
+       
+    <input type="text" placeholder="Search a Location">
+    <button>
+        Search 
+        <span class="icon">🔍</span>
+    </button>
+
     </section>
    
 </body>
+<script>
+    const slider = document.getElementById("locat");
+const left = document.getElementById("arrow1");
+const right = document.getElementById("arrow2");
+
+right.addEventListener("click", () => {
+  slider.scrollBy({ left: 250, behavior: "smooth" });
+});
+
+left.addEventListener("click", () => {
+  slider.scrollBy({ left: -250, behavior: "smooth" });
+});
+
+</script>
 </html>
