@@ -133,14 +133,17 @@ header nav a:hover {
 }
 
 .search-container {
-    width: 600px;
-    height: 60px;
+ 
+    width: 70%;
+    margin: 70px auto;
+    height: 80px;
     display: flex;
     background: #fff;
     border: 2px solid #ddd;
     border-radius: 50px;
     overflow: hidden;
     padding: 0;
+    align-items: center;
 }
 
 .search-container input {
@@ -154,6 +157,10 @@ header nav a:hover {
 
 .search-container button {
     background: #1e1e1e;
+     width: 170px;
+    height: 60px;
+    margin-right: 10px;
+    /* margin: 10px ; */
     color: white;
     border: none;
     padding: 0 30px;
@@ -166,7 +173,9 @@ header nav a:hover {
 }
 
 .search-container button:hover {
-    background: #000;
+    background: white;
+    color: black;
+    border: black 2px solid;
 }
 
 .icon {
